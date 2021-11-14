@@ -26,10 +26,36 @@ namespace TennisTime.Models
 					MakeId = "A",
 					Price = "200",
 					Year = 2020
+				},
+				new Racquet
+				{
+					RacquetId = 2,
+					Model = "Pro Staff",
+					MakeId = "A",
+					Price = "200",
+					Year = 2018
+				},
+				new Racquet
+				{
+					RacquetId = 3,
+					Model = "Aero Pro Drive",
+					MakeId = "B",
+					Price = "180",
+					Year = 2019
+				},
+				new Racquet
+				{
+					RacquetId = 4,
+					Model = "Vcore 98",
+					MakeId = "C",
+					Price = "200",
+					Year = 2021
 				}
 				);
 			modelBuilder.Entity<Make>().HasData(
-				new Make { MakeId = "A", Name = "Wilson" }
+				new Make { MakeId = "A", Name = "Wilson" },
+				new Make { MakeId = "B", Name = "Babolat" },
+				new Make { MakeId = "A", Name = "Yonex" }
 				);
 					
 		}
