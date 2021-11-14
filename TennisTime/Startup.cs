@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TennisTime.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace TennisTime
 {
@@ -23,7 +25,15 @@ namespace TennisTime
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
+			services.AddRouting(options => {
+				options.LowercaseUrls = true;
+				options.AppendTrailingSlash = true;
+			});
+
 			services.AddControllersWithViews();
+
+			services.AddDbContext<RacquetContext>(options =>
+				options.UseSqlServer(Configuration.GetConnectionString("RacquetContext")));
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,7 +60,7 @@ namespace TennisTime
 			{
 				endpoints.MapControllerRoute(
 					name: "default",
-					pattern: "{controller=Home}/{action=Index}/{id?}");
+					pattern: "{controller=Home}/{action=Index}/{id?}/{slug?}");
 			});
 		}
 	}
