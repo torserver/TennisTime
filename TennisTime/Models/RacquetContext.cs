@@ -23,7 +23,7 @@ namespace TennisTime.Models
 				{
 					RacquetId = 1,
 					Model = "Blade 98 v7",
-					MakeId = "A",
+					MakeId = "W",
 					Price = "200",
 					Year = 2020
 				},
@@ -31,7 +31,7 @@ namespace TennisTime.Models
 				{
 					RacquetId = 2,
 					Model = "Pro Staff",
-					MakeId = "A",
+					MakeId = "W",
 					Price = "200",
 					Year = 2018
 				},
@@ -47,7 +47,7 @@ namespace TennisTime.Models
 				{
 					RacquetId = 4,
 					Model = "Vcore 98",
-					MakeId = "C",
+					MakeId = "Y",
 					Price = "200",
 					Year = 2021
 				}

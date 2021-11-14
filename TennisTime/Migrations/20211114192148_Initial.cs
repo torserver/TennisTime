@@ -38,7 +38,7 @@ namespace TennisTime.Migrations
                         column: x => x.MakeId,
                         principalTable: "Make",
                         principalColumn: "MakeId",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.InsertData(
@@ -56,9 +56,9 @@ namespace TennisTime.Migrations
                 columns: new[] { "RacquetId", "MakeId", "Model", "Price", "Year" },
                 values: new object[,]
                 {
-                    { 1, "A", "Blade 98 v7", "200", 2020 },
-                    { 2, "A", "Pro Staff", "200", 2018 },
-                    { 4, "C", "Vcore 98", "200", 2021 }
+                    { 1, "W", "Blade 98 v7", "200", 2020 },
+                    { 2, "W", "Pro Staff", "200", 2018 },
+                    { 4, "Y", "Vcore 98", "200", 2021 }
                 });
 
             migrationBuilder.InsertData(
