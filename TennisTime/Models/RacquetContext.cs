@@ -24,7 +24,7 @@ namespace TennisTime.Models
 					RacquetId = 1,
 					Model = "Blade 98 v7",
 					MakeId = "A",
-					Price = "200",
+					Price = 200,
 					Year = 2020
 				},
 				new Racquet
@@ -32,7 +32,7 @@ namespace TennisTime.Models
 					RacquetId = 2,
 					Model = "Pro Staff",
 					MakeId = "A",
-					Price = "200",
+					Price = 200,
 					Year = 2018
 				},
 				new Racquet
@@ -40,7 +40,7 @@ namespace TennisTime.Models
 					RacquetId = 3,
 					Model = "Aero Pro Drive",
 					MakeId = "B",
-					Price = "180",
+					Price = 180,
 					Year = 2019
 				},
 				new Racquet
@@ -48,7 +48,7 @@ namespace TennisTime.Models
 					RacquetId = 4,
 					Model = "Vcore 98",
 					MakeId = "C",
-					Price = "200",
+					Price = 200,
 					Year = 2021
 				}
 				);
