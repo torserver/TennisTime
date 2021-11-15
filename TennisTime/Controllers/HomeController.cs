@@ -27,7 +27,22 @@ namespace TennisTime.Controllers
 		{
 			return View();
 		}
-
+		public IActionResult OurTeam()
+		{
+			return View();
+		}
+		public IActionResult Rules()
+		{
+			return View();
+		}
+		public IActionResult Equipment()
+		{
+			return View();
+		}
+		public IActionResult WorldRecords()
+		{
+			return View();
+		}
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
 		public IActionResult Error()
 		{
