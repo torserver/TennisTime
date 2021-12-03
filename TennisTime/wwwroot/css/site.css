@@ -54,6 +54,10 @@ a {
 #WomensRecordsTable td 
 {text-align: center;}
 
+.center{
+  left: 50%;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
