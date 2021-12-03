@@ -24,6 +24,21 @@ a {
   border-color: #1861ac;
 }
 
+#MensRecordsTable table 
+{border: 1.5px solid black;
+ width: 80%;
+ border-spacing: 0;
+ border-collapse: collapse;
+}
+
+#MensRecordsTable td, th 
+{padding: 5px;
+ border: 1px solid black; 
+}
+
+#MensRecordsTable td 
+{text-align: center;}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
