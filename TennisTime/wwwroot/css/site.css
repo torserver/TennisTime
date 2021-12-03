@@ -55,6 +55,7 @@ a {
 {text-align: center;}
 
 .center{
+  position: fixed;
   left: 50%;
 }
 
