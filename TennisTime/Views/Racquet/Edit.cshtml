@@ -1,0 +1,43 @@
+@model Racquet
+
+@{
+    string title = ViewBag.Action + " Racquet";
+    ViewBag.Title = title;
+}
+
+<h2>@title</h2>
+
+<form asp-action="Edit" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="Model">Model</label>
+        <input asp-for="Model" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Year">Year</label>
+        <input asp-for="Year" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="MakeId">Make</label>
+        <select asp-for="MakeId" class="form-control">
+            <option value="">select a genre</option> 
+            @foreach (Make m in ViewBag.Makes)
+            {
+                <option value="@m.MakeId">@m.Name</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Price">Price</label>
+        <input asp-for="Price" class="form-control">
+    </div>
+
+    <input type="hidden" asp-for="RacquetId" />
+
+    <button type="submit" class="btn btn-primary">@ViewBag.Action</button>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Cancel</a>
+</form>
