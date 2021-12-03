@@ -1,0 +1,30 @@
+@model List<Racquet>
+@{
+    ViewBag.Title = "Racquets";
+}
+
+<h2>Racquet List</h2>
+<a asp-controller="Racquet" asp-action="Add">Add New Racquet</a>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr><th>Model</th><th>Year</th><th>Make</th><th>Price</th><th></th></tr>
+    </thead>
+    <tbody>
+        @foreach (var racquet in Model) {
+            <tr>
+                <td>@racquet.Model</td>
+                <td>@racquet.Year</td>
+                <td>@racquet.Make.Name</td>
+                <td>@racquet.Price</td>
+                <td>
+                    <a asp-controller="Movie" asp-action="Edit"
+                       asp-route-id="@racquet.RacquetId"
+                       asp-route-slug="@racquet.Slug">Edit</a>
+                    <a asp-controller="Movie" asp-action="Delete"
+                       asp-route-id="@racquet.RacquetId"
+                       asp-route-slug="@racquet.Slug">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
