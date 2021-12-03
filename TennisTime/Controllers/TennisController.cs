@@ -1,13 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-
+using TennisTime.Models;
+using Microsoft.EntityFrameworkCore;
 namespace TennisTime.Controllers
 {
     public class TennisController : Controller
     {
+		private RacquetContext context { get; set; }
+
+		public TennisController(RacquetContext ctx)
+		{
+			context = ctx;
+		}
         public IActionResult Index()
         {
             return View();
@@ -18,12 +22,12 @@ namespace TennisTime.Controllers
 		}
 		public IActionResult Equipment()
 		{
-			// var Make = "";
-			// var Model = "";
-			// var year = "";
-			// var Price = "";
+			var racquets = context.Racquets
+				.Include(g => g.Make)
+				.OrderBy(g => g.Model)
+				.ToList();
+			return View(racquets);
 
-			return View();
 		}
 		public IActionResult WorldRecords()
 		{
