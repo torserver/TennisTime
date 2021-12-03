@@ -25,18 +25,33 @@ a {
 }
 
 #MensRecordsTable table 
-{
- width: 90%;
- border-spacing: 5px;
+{border: 1.5px solid black;
+ width: 80%;
+ border-spacing: 0;
  border-collapse: collapse;
 }
 
-#MensRecordsTable td, th, tr
-{padding: 10px;
- border: 2px solid black; 
+#MensRecordsTable td, th
+{padding: 5px;
+ border: 1px solid black; 
 }
 
 #MensRecordsTable td 
+{text-align: center;}
+
+#WomensRecordsTable table 
+{border: 1.5px solid black;
+ width: 80%;
+ border-spacing: 0;
+ border-collapse: collapse;
+}
+
+#WomensRecordsTable td, th
+{padding: 5px;
+ border: 1px solid black; 
+}
+
+#WomensRecordsTable td 
 {text-align: center;}
 
 /* Sticky footer styles
