@@ -18,10 +18,10 @@ namespace TennisTime.Controllers
 		}
 		public IActionResult Equipment()
 		{
-			var Make = "";
-			var Model = "";
-			var year = "";
-			var Price = "";
+			// var Make = "";
+			// var Model = "";
+			// var year = "";
+			// var Price = "";
 
 			return View();
 		}
