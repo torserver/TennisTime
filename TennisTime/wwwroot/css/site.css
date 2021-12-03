@@ -25,15 +25,15 @@ a {
 }
 
 #MensRecordsTable table 
-{border: 1.5px solid #e5e5e5;
- width: 80%;
- border-spacing: 0;
+{
+ width: 90%;
+ border-spacing: 5px;
  border-collapse: collapse;
 }
 
-#MensRecordsTable td, th 
+#MensRecordsTable td, th, tr
 {padding: 10px;
- border: 2px solid #e5e5e5; 
+ border: 2px solid black; 
 }
 
 #MensRecordsTable td 
