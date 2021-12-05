@@ -16,6 +16,7 @@ namespace TennisTime.Controllers
 		public HomeController(ILogger<HomeController> logger)
 		{
 			_logger = logger;
+			
 		}
 
 		public IActionResult Index()
@@ -32,10 +33,6 @@ namespace TennisTime.Controllers
 			return View();
 		}
 		public IActionResult Rules()
-		{
-			return View();
-		}
-		public IActionResult Equipment()
 		{
 			return View();
 		}
