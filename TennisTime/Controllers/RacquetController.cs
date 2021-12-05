@@ -40,7 +40,7 @@ namespace TennisTime.Controllers
                 else 
                     context.Racquets.Update(racquet);
                 context.SaveChanges();
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Equipment", "Tennis");
             }
             else
             {
@@ -62,7 +62,7 @@ namespace TennisTime.Controllers
         {
             context.Racquets.Remove(racquet);
             context.SaveChanges();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Equipment", "Tennis");
         }
     }
 }
