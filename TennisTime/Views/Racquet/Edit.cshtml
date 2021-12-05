@@ -23,7 +23,7 @@
     <div class="form-group">
         <label asp-for="MakeId">Make</label>
         <select asp-for="MakeId" class="form-control">
-            <option value="">select a genre</option> 
+            <option value="">select a make</option> 
             @foreach (Make m in ViewBag.Makes)
             {
                 <option value="@m.MakeId">@m.Name</option>
