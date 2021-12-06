@@ -24,38 +24,33 @@ a {
   border-color: #1861ac;
 }
 
-#MensRecordsTable table 
-{border: 1.5px solid black;
- width: 80%;
- border-spacing: 0;
- border-collapse: collapse;
+#MensRecordsTable table { 
+  border: 1.5px solid black;
+  width: 80%;
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 
-#MensRecordsTable td, th
-{padding: 5px;
- border: 1px solid black; 
+#MensRecordsTable td, th {
+  padding: 5px;
+  border: 1px solid black; 
+  text-align: center;
 }
 
-#MensRecordsTable td 
-{text-align: center;}
-
-#WomensRecordsTable table 
-{border: 1.5px solid black;
- width: 80%;
- border-spacing: 0;
- border-collapse: collapse;
+#WomensRecordsTable table {
+  border: 1.5px solid black;
+  width: 80%;
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 
-#WomensRecordsTable td, th
-{padding: 5px;
- border: 1px solid black; 
+#WomensRecordsTable td, th {
+  padding: 5px;
+  border: 1px solid black; 
+  text-align: center;
 }
 
-#WomensRecordsTable td 
-{text-align: center;}
-
-.center
-{
+.center {
  text-align:center;
  display:block;
 }
@@ -98,10 +93,42 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+
+h1 {
+  padding: 15px 15px 15px 15px;
+  margin: auto;
+}
+
+h2 {
+  padding: 10px 10px 10px 10px;
+  margin: auto;
+}
+
+div {
+  margin: auto;
+}
+
+p {
+  margin: auto;
+}
+
+img {
+  margin: auto;
+  display: block;
+  width: 450px;
+  height: 350px;
+  border: 3px solid black;
+  border-radius: 4px;
+}
+
+td {
+  padding: 5px 5px 5px 5px;
 }
